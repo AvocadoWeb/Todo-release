@@ -8,7 +8,7 @@ import { Provider } from '../../context'
 import './App.css'
 
 export default class App extends Component {
-  maxId = 100
+  maxId = 999
 
   state = {
     todoData: [],
