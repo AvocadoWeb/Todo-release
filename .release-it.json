@@ -2,8 +2,7 @@
   "plugins": {
     "@release-it/conventional-changelog": {
       "infile": "CHANGELOG.md",
-      "header": "# Changelog",
-      "preset": "eslint"
+      "header": "# Changelog"
     }
   }
 }
