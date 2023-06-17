@@ -1,5 +1,12 @@
 
 
+## [0.2.0](https://github.com/AvocadoWeb/Todo-release/compare/0.1.5...0.2.0) (2023-06-17)
+
+
+### Features
+
+* app upd1 ([f0e1fed](https://github.com/AvocadoWeb/Todo-release/commit/f0e1fed0f8a1d7ef3bdcb65b629df004aa7f4f84))
+
 ### [0.1.5](https://github.com/AvocadoWeb/Todo-release/compare/0.1.4...0.1.5) (2023-06-17)
 
 ### [0.1.4](https://github.com/AvocadoWeb/Todo-release/compare/0.1.2...0.1.4) (2023-06-17)
