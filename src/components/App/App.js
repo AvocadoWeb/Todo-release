@@ -3,6 +3,7 @@ import { Component } from 'react'
 import AppHeader from '../AppHeader'
 import TaskList from '../TaskList'
 import Footer from '../Footer'
+import { Provider } from '../../context'
 
 import './App.css'
 
@@ -14,9 +15,11 @@ export default class App extends Component {
     filter: 'all',
   }
 
-  createTodoItem(label) {
+  createTodoItem(label, min, sec) {
     return {
       label,
+      min,
+      sec,
       checked: false,
       id: this.maxId++,
       edit: false,
@@ -35,8 +38,8 @@ export default class App extends Component {
     })
   }
 
-  addItem = (text) => {
-    const newItem = this.createTodoItem(text)
+  addItem = (label, min, sec) => {
+    const newItem = this.createTodoItem(label, min, sec)
 
     this.setState(({ todoData }) => {
       const newArr = [...todoData, newItem]
@@ -55,7 +58,6 @@ export default class App extends Component {
       const newItem = { ...oldItem, checked: !oldItem.checked }
 
       const newArr = [...todoData.slice(0, idx), newItem, ...todoData.slice(idx + 1)]
-
       return {
         todoData: newArr,
       }
@@ -97,23 +99,24 @@ export default class App extends Component {
     this.setState({ filter })
   }
 
-  filterItems(items, filter) {
-    switch (filter) {
-      case 'all':
-        return items
-      case 'active':
-        return items.filter((el) => !el.checked)
-      case 'completed':
-        return items.filter((el) => el.checked)
-      default:
-        return items
+  filterItems() {
+    const { todoData, filter } = this.state
+    if (filter === 'active') {
+      this.filter += 'active'
+      return todoData.filter((el) => el.checked !== true)
     }
+    if (filter === 'completed') {
+      this.filter += 'completed'
+      return todoData.filter((el) => el.checked === true)
+    }
+    this.filter += 'all'
+    return todoData
   }
 
   clearCompleted = () => {
-    this.state.todoData.forEach((element) => {
-      if (element.checked) {
-        this.deleteItem(element.id)
+    this.state.todoData.forEach((el) => {
+      if (el.checked) {
+        this.deleteItem(el.id)
       }
     })
   }
@@ -126,23 +129,25 @@ export default class App extends Component {
     const visibleItems = this.filterItems(todoData, filter)
     return (
       <div className="todoapp">
-        <AppHeader onAddedItem={this.addItem} />
-        <div className="main">
-          <TaskList
-            todos={visibleItems}
-            onDeleted={this.deleteItem}
-            onToggleCompleted={this.onToggleCompleted}
-            onEdit={this.editItem}
-            editSubmit={this.editSubmit}
-          />
-          <Footer
-            todoCount={todoCount}
-            creationTime={this.getCreationTime}
-            onClear={this.clearCompleted}
-            filter={filter}
-            selectionFilter={this.selectionFilter}
-          />
-        </div>
+        <Provider value={{ todoData }}>
+          <AppHeader onAddedItem={this.addItem} />
+          <div className="main">
+            <TaskList
+              todos={visibleItems}
+              onDeleted={this.deleteItem}
+              onToggleCompleted={this.onToggleCompleted}
+              onEdit={this.editItem}
+              editSubmit={this.editSubmit}
+            />
+            <Footer
+              todoCount={todoCount}
+              onClear={this.clearCompleted}
+              filter={filter}
+              selectionFilter={this.selectionFilter}
+              onFilterClick={this.statusListener}
+            />
+          </div>
+        </Provider>
       </div>
     )
   }
