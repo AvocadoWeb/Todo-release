@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.0.0 (2023-06-17)
+
+* del ([a6591eb](https://github.com/AvocadoWeb/Todo-release/commit/a6591eb))
+* sdrf ([60a0541](https://github.com/AvocadoWeb/Todo-release/commit/60a0541))
+* up ([054e2d1](https://github.com/AvocadoWeb/Todo-release/commit/054e2d1))
+* upd hooks ([8a44e13](https://github.com/AvocadoWeb/Todo-release/commit/8a44e13))
+* upd rel ([40a4b5e](https://github.com/AvocadoWeb/Todo-release/commit/40a4b5e))
+
 ### [0.2.3](https://github.com/AvocadoWeb/Todo-release/compare/0.2.2...0.2.3) (2023-06-17)
 
 ### [0.2.2](https://github.com/AvocadoWeb/Todo-release/compare/0.2.1...0.2.2) (2023-06-17)
