@@ -2,6 +2,9 @@ import { Component } from 'react'
 import { formatDistanceToNow } from 'date-fns'
 import PropTypes from 'prop-types'
 
+import Timer from '../Timer/Timer'
+import { Consumer } from '../../context'
+
 import './Task.css'
 
 export default class Task extends Component {
@@ -12,19 +15,6 @@ export default class Task extends Component {
   onChange = (event) => {
     this.setState({
       value: event.target.value,
-    })
-  }
-
-  onSubmit = (event) => {
-    event.preventDefault()
-    const {
-      editItem,
-      todo: { id },
-    } = this.props
-    editItem(id, this.state.label)
-
-    this.setState({
-      label: '',
     })
   }
 
@@ -43,10 +33,16 @@ export default class Task extends Component {
     ) : (
       <li className={checked ? 'completed' : this.props.edit ? 'editing' : null}>
         <div className="view">
-          <input id={id} className="toggle" type="checkbox" onClick={onToggleCompleted} />
+          <input id={id} className="toggle" type="checkbox" checked={checked} onChange={onToggleCompleted} />
           <label htmlFor={id}>
-            <span className="description">{label}</span>
-            <span className="created">
+            <span className="title">{label}</span>
+            <Consumer>
+              {({ todoData }) => {
+                const { min, sec } = todoData.filter((el) => el.id === id)[0]
+                return <Timer min={Number(min)} sec={Number(sec)} checked={checked} />
+              }}
+            </Consumer>
+            <span className="description">
               created{' '}
               {formatDistanceToNow(date, {
                 includeSeconds: true,
