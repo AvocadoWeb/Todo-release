@@ -1,12 +1,4 @@
 {
-  "github": {
-    "release": {
-      "tagName": "v${version}",
-      "name": "Release ${version}",
-      "notes": "${changelog}",
-      "tokenRef": "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"
-    }
-  },
   "plugins": {
     "@release-it/conventional-changelog": {
       "preset": {
