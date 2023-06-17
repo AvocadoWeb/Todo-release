@@ -4,7 +4,7 @@ import Task from '../Task'
 
 import './TaskList.css'
 
-const TaskList = ({ todos, onDeleted, onToggleCompleted, onEdit, editSubmit }) => {
+export default function TaskList({ todos, onDeleted, onToggleCompleted, onEdit, editSubmit }) {
   const elements = todos.map((item) => {
     const { id, ...itemProps } = item
     return (
@@ -12,6 +12,8 @@ const TaskList = ({ todos, onDeleted, onToggleCompleted, onEdit, editSubmit }) =
         {...itemProps}
         id={id}
         key={id}
+        min={item.min}
+        sec={item.sec}
         editSubmit={(event) => editSubmit(event, id)}
         onDeleted={() => onDeleted(id)}
         onToggleCompleted={() => onToggleCompleted(id)}
@@ -38,4 +40,3 @@ TaskList.propTypes = {
   onToggleCompleted: PropTypes.func,
   onEdit: PropTypes.func,
 }
-export default TaskList

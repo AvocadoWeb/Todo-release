@@ -4,21 +4,19 @@ import NewTaskForm from '../NewTaskForm'
 
 import './AppHeader.css'
 
-const AppHeader = ({ onAddedItem }) => {
+export default function AppHeader({ onAddItem }) {
   return (
     <header className="header">
       <h1>Todos</h1>
-      <NewTaskForm onAddedItem={onAddedItem} />
+      <NewTaskForm onAddItem={onAddItem} />
     </header>
   )
 }
 
 AppHeader.defaultProps = {
-  onAddedItem: () => {},
+  onAddItem: () => {},
 }
 
 AppHeader.propTypes = {
-  onAddedItem: PropTypes.func,
+  onAddItem: PropTypes.func,
 }
-
-export default AppHeader
