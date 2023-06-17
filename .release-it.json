@@ -8,7 +8,6 @@
   "plugins": {
     "@release-it/conventional-changelog": {
       "preset": {
-        "name": "convetionalcommits",
         "header": "# Новое",
         "types": [
           {
