@@ -3,7 +3,11 @@
     "commitMessage": "chore: release v${version}"
   },
   "github": {
-    "release": true
+    "release": {
+      "tagName": "v${version}",
+      "name": "Release ${version}",
+      "notes": "${changelog}"
+    }
   },
   "plugins": {
     "@release-it/conventional-changelog": {
