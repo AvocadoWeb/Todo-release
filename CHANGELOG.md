@@ -1,5 +1,13 @@
 # Changelog
 
+# [1.8.0-alpha.0](https://github.com/AvocadoWeb/Todo-release/compare/1.7.0...1.8.0-alpha.0) (2023-06-18)
+
+
+### Features
+
+* альф много не бывает[alpha] ([ab50870](https://github.com/AvocadoWeb/Todo-release/commit/ab50870db096fd7cd34b74b9b29dca31ecaf37c9))
+* еще альфа [alpha] ([a44f789](https://github.com/AvocadoWeb/Todo-release/commit/a44f789a03f0a1adb5eed9fcbc4e98b6ffc10534))
+
 # [1.7.0](https://github.com/AvocadoWeb/Todo-release/compare/1.6.0...1.7.0) (2023-06-18)
 
 
