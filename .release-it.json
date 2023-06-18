@@ -3,10 +3,8 @@
     "@release-it/conventional-changelog": {
       "infile": "CHANGELOG.md",
       "header": "# Changelog",
-      "preset": {
-        "issue-url": "https://gitlab.com/levotarayan98/airways/-/issues/{{id}}",
+      "issue-url": "https://gitlab.com/levotarayan98/airways/-/issues/{{id}}",
         "issue-pattern": "#(\\d+)"
-      }
     }
   }
 }
