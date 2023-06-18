@@ -30,7 +30,8 @@
           },
           {
             "type": "fix",
-            "section": "Bug Fixes"
+            "section": "Bug Fixes",
+            "release": "patch"
           },
           {
             "type": "chore",
@@ -87,6 +88,15 @@
         "prerelease": {
           "section": "Pre-Releases",
           "release": "prerelease"
+        },
+        "increment": {
+          "unreleased": false,
+          "beta": {
+            "prereleaseId": "beta"
+          },
+          "alpha": {
+            "prereleaseId": "alpha"
+          }
         }
       }
     }
