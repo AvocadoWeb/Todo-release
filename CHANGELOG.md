@@ -1,5 +1,12 @@
 # Changelog
 
+# [1.7.0](https://github.com/AvocadoWeb/Todo-release/compare/1.6.0...1.7.0) (2023-06-18)
+
+
+### Features
+
+* альфа ([f74de53](https://github.com/AvocadoWeb/Todo-release/commit/f74de53941f683374a31134510a8952971fde767))
+
 * feat: альфа (8007cb4)
 * ЧТо-то когда-то (#12) (416df7d)
 * Что-то (dcc3e23)
