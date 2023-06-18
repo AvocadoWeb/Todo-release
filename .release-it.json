@@ -43,7 +43,9 @@
             "section": "Test"
           }
         ]
-      }
+      },
+      "issue-url": "https://gitlab.com/levotarayan98/airways/-/merge_requests/{{id}}",
+      "issue-pattern": "#(\\d+)"
 
     }
   }
