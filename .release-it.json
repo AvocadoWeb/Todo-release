@@ -5,22 +5,7 @@
       "header": "# Changelog",
       "issue-url": "https://gitlab.com/levotarayan98/airways/-/issues/{{id}}",
       "issue-pattern": "#(\\d+)",
-      "preset": "angular",
-      "config": {
-        "types": [
-          { "type": "feat", "section": "Features" },
-          { "type": "fix", "section": "Bug Fixes" },
-          { "type": "docs", "section": "Documentation" },
-          { "type": "style", "section": "Styles" },
-          { "type": "refactor", "section": "Refactor" },
-          { "type": "perf", "section": "Performance" },
-          { "type": "test", "section": "Tests" },
-          { "type": "build", "section": "Build" },
-          { "type": "ci", "section": "Continuous Integration" },
-          { "type": "chore", "section": "Chores" },
-          { "type": "revert", "section": "Reverts" }
-        ]
-      }
+      "preset": "angular"
     }
   }
 }
