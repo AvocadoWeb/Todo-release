@@ -1,21 +1,23 @@
-{ 
+{
   "git": {
-  "push": true,
-  "commit": true,
-  "tag": true
-},
-"github": {
-  "release": true,
-  "draft": true
-},
+    "push": true,
+    "commit": true,
+    "tag": true
+  },
+  "github": {
+    "release": true,
+    "draft": true
+  },
   "plugins": {
     "@release-it/conventional-changelog": {
       "infile": "CHANGELOG.md",
       "header": "# Changelog",
-      "issue-url": "https://gitlab.com/levotarayan98/airways/-/issues/{{id}}",
-      "issue-pattern": "#(\\d+)",
       "releaseName": "${version}${preReleaseId ? '-' + preReleaseId : ''}",
-      "preset": "angular"
+      "preset": {
+        "name": "angular",
+        "issue-url": "https://github.com/AvocadoWeb/Todo-release/issues/{{id}}",
+        "issue-pattern": "#(\\d+)"
+      }
     }
   }
 }
