@@ -1,4 +1,16 @@
-{
+{ 
+  "git": {
+  "commitMessage": "chore(release): v${version}",
+  "push": true,
+  "commit": true,
+  "tag": true,
+  "requireCommits": false,
+  "requireCleanWorkingDir": false
+},
+"github": {
+  "release": true,
+  "draft": true
+},
   "plugins": {
     "@release-it/conventional-changelog": {
       "infile": "CHANGELOG.md",
