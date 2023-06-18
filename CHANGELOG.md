@@ -1,5 +1,23 @@
 # Changelog
 
+## [1.2.3](https://github.com/AvocadoWeb/Todo-release/compare/1.2.1...1.2.3) (2023-06-18)
+
+
+### Bug Fixes
+
+* исправление ([698b59d](https://github.com/AvocadoWeb/Todo-release/commit/698b59dbd8b3fca38bb22973c5d159bb131a3aac))
+* правка ([357acd4](https://github.com/AvocadoWeb/Todo-release/commit/357acd4e34ae239043f8cfeba12e75ba7227323f))
+* sedfc ([dcd22cd](https://github.com/AvocadoWeb/Todo-release/commit/dcd22cde6ff8b0c3402d3fc9f15854743265e003))
+
+## [1.2.2](https://github.com/AvocadoWeb/Todo-release/compare/1.2.1...1.2.2) (2023-06-18)
+
+
+### Bug Fixes
+
+* исправление ([698b59d](https://github.com/AvocadoWeb/Todo-release/commit/698b59dbd8b3fca38bb22973c5d159bb131a3aac))
+* правка ([357acd4](https://github.com/AvocadoWeb/Todo-release/commit/357acd4e34ae239043f8cfeba12e75ba7227323f))
+* sedfc ([dcd22cd](https://github.com/AvocadoWeb/Todo-release/commit/dcd22cde6ff8b0c3402d3fc9f15854743265e003))
+
 * fix: фикс (e58fcba)
 * fix: Дополнительный функицонал релизов (#25) (5e29c6e)
 
