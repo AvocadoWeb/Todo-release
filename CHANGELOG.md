@@ -1,5 +1,13 @@
 # Changelog
 
+# [1.8.0-beta.0](https://github.com/AvocadoWeb/Todo-release/compare/1.8.0-alpha.0...1.8.0-beta.0) (2023-06-18)
+
+
+### Features
+
+* кто там ([fe34d09](https://github.com/AvocadoWeb/Todo-release/commit/fe34d096eed50b798f98e5fa1cea84638ce4de75))
+* Кто там ([#14](https://github.com/AvocadoWeb/Todo-release/issues/14)) ([0395957](https://github.com/AvocadoWeb/Todo-release/commit/0395957a9892c45cc06d73e8b4ea3cd702477d41))
+
 # [1.8.0-alpha.0](https://github.com/AvocadoWeb/Todo-release/compare/1.7.0...1.8.0-alpha.0) (2023-06-18)
 
 
