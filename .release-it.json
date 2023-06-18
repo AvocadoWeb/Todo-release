@@ -2,7 +2,49 @@
   "plugins": {
     "@release-it/conventional-changelog": {
       "infile": "CHANGELOG.md",
-      "header": "# Changelog"
+      "header": "# Changelog",
+      "preset": {
+        "name": "angular",
+        "types": [
+          {
+            "type": "build",
+            "section": "Build"
+          },
+          {
+            "type": "ci",
+            "section": "CI"
+          },
+          {
+            "type": "docs",
+            "section": "Docs"
+          },
+          {
+            "type": "feat",
+            "section": "Features"
+          },
+          {
+            "type": "fix",
+            "section": "Bug Fixes"
+          },
+          {
+            "type": "perf",
+            "section": "Perf"
+          },
+          {
+            "type": "refactor",
+            "section": "Refactor"
+          },
+          {
+            "type": "style",
+            "section": "Style"
+          },
+          {
+            "type": "test",
+            "section": "Test"
+          }
+        ]
+      }
+
     }
   }
 }
