@@ -6,7 +6,18 @@
       "preset": {
         "name": "angular",
         "issue-url": "https://gitlab.com/levotarayan98/airways/-/issues/{{id}}",
-        "issue-pattern": "#(\\d+)"
+        "issue-pattern": "#(\\d+)",
+        "types": [
+          {
+            "type": "alpha",
+            "section": "Alpha Releases",
+            "release": "prerelease"
+          }
+        ],
+        "prerelease": {
+          "section": "Pre-Releases",
+          "release": "prerelease"
+        }
       }
     }
   }
