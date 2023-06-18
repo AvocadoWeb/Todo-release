@@ -1,5 +1,22 @@
 # Changelog
 
+# [1.1.0](https://github.com/AvocadoWeb/Todo-release/compare/0.2.2...1.1.0) (2023-06-18)
+
+
+### Bug Fixes
+
+* 5 ([faf0630](https://github.com/AvocadoWeb/Todo-release/commit/faf0630ce1ff355221146f6fcc740f209d4752ba))
+
+
+### Features
+
+* 4 ([cecd006](https://github.com/AvocadoWeb/Todo-release/commit/cecd0062d5f479b090c6afec5108f2dc5fb40b95))
+
+
+### Performance Improvements
+
+* 6 ([f1fffb9](https://github.com/AvocadoWeb/Todo-release/commit/f1fffb948897a0dac328387651428a65bd1c3428))
+
 ## 1.0.0 (2023-06-17)
 
 * del ([a6591eb](https://github.com/AvocadoWeb/Todo-release/commit/a6591eb))
