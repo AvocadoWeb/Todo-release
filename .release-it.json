@@ -3,9 +3,7 @@
   "commitMessage": "chore(release): v${version}",
   "push": true,
   "commit": true,
-  "tag": true,
-  "requireCommits": false,
-  "requireCleanWorkingDir": false
+  "tag": true
 },
 "github": {
   "release": true,
