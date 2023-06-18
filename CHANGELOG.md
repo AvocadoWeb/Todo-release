@@ -1,5 +1,12 @@
 # Changelog
 
+# [1.5.0](https://github.com/AvocadoWeb/Todo-release/compare/1.4.1...1.5.0) (2023-06-18)
+
+
+### Features
+
+* srdgvs ([7804ab7](https://github.com/AvocadoWeb/Todo-release/commit/7804ab75827302a27455d4efa28348cf2a90b61f))
+
 ## [1.4.1](https://github.com/AvocadoWeb/Todo-release/compare/1.4.0...1.4.1) (2023-06-18)
 
 
