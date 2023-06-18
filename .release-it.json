@@ -5,48 +5,90 @@
       "header": "# Changelog",
       "preset": {
         "name": "angular",
+        "issue-url": "https://gitlab.com/levotarayan98/airways/-/issues/{{id}}",
+      "issue-pattern": "#(\\d+)",
         "types": [
           {
             "type": "build",
-            "section": "Build"
+            "section": "Build",
+            "release": "patch"
           },
           {
             "type": "ci",
-            "section": "CI"
+            "section": "CI",
+            "release": "patch"
           },
           {
             "type": "docs",
-            "section": "Docs"
+            "section": "Docs",
+            "release": "minor"
           },
           {
             "type": "feat",
-            "section": "Features"
+            "section": "Features",
+            "release": "major"
           },
           {
             "type": "fix",
             "section": "Bug Fixes"
           },
           {
+            "type": "chore",
+            "section": "Chores",
+            "release": "patch"
+          },
+          {
             "type": "perf",
-            "section": "Perf"
+            "section": "Performance Improvements",
+            "release": "patch"
           },
           {
             "type": "refactor",
-            "section": "Refactor"
+            "section": "Refactor",
+            "release": "minor"
           },
           {
             "type": "style",
-            "section": "Style"
+            "section": "Styles",
+            "release": "patch"
           },
           {
             "type": "test",
-            "section": "Test"
+            "section": "Test",
+            "release": "minor"
+          },
+          {
+            "type": "security",
+            "section": "Security",
+            "release": "patch"
+          },
+          {
+            "type": "deprecated",
+            "section": "Deprecations",
+            "release": "minor"
+          },
+          {
+            "type": "alpha",
+            "section": "Alpha Releases",
+            "release": "prerelease"
+          },
+          {
+            "type": "beta",
+            "section": "Beta Releases",
+            "release": "prerelease"
+          },
+          {
+            "type": "unreleased",
+            "section": "Unreleased",
+            "release": false,
+            "hidden": true
           }
-        ]
-      },
-      "issue-url": "https://gitlab.com/levotarayan98/airways/-/merge_requests/{{id}}",
-      "issue-pattern": "#(\\d+)"
-
+        ],
+        "prerelease": {
+          "section": "Pre-Releases",
+          "release": "prerelease"
+        }
+      }
     }
   }
 }

@@ -1,5 +1,8 @@
 # Changelog
 
+* fix: фикс (e58fcba)
+* fix: Дополнительный функицонал релизов (#25) (5e29c6e)
+
 # [1.2.0](https://github.com/AvocadoWeb/Todo-release/compare/1.1.0...1.2.0) (2023-06-18)
 
 
