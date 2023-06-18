@@ -15,7 +15,7 @@
       "releaseName": "${version}${preReleaseId ? '-' + preReleaseId : ''}",
       "preset": {
         "name": "angular",
-        "issue-url": "https://gitlab.com/levotarayan98/airways/-/issues/{{id}}",
+        "issue-url": "https://github.com/AvocadoWeb/Todo-release/issues/{{id}}",
         "issue-pattern": "#(\\d+)"
       }
     }
