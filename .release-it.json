@@ -5,8 +5,7 @@
       "header": "# Changelog",
       "issue-url": "https://gitlab.com/levotarayan98/airways/-/issues/{{id}}",
       "issue-pattern": "#(\\d+)",
-      "preset": {
-        "name": "angular",
+      "config": {
         "types": [
           {
             "type": "build",
