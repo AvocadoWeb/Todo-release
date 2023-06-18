@@ -1,5 +1,12 @@
 # Changelog
 
+# [1.2.0](https://github.com/AvocadoWeb/Todo-release/compare/1.1.0...1.2.0) (2023-06-18)
+
+
+### Bug Fixes
+
+* Пример ([#96](https://github.com/AvocadoWeb/Todo-release/issues/96)) ([f40b777](https://github.com/AvocadoWeb/Todo-release/commit/f40b777b61b74f1e82a8535dcf2e8c6454f70fc5))
+
 # [1.1.0](https://github.com/AvocadoWeb/Todo-release/compare/0.2.2...1.1.0) (2023-06-18)
 
 
