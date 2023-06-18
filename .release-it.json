@@ -4,7 +4,72 @@
       "infile": "CHANGELOG.md",
       "header": "# Changelog",
       "issue-url": "https://gitlab.com/levotarayan98/airways/-/issues/{{id}}",
-        "issue-pattern": "#(\\d+)"
+      "issue-pattern": "#(\\d+)",
+      "preset": {
+        "name": "angular",
+        "types": [
+          {
+            "type": "build",
+            "section": "Build",
+            "release": "patch"
+          },
+          {
+            "type": "ci",
+            "section": "CI",
+            "release": "patch"
+          },
+          {
+            "type": "docs",
+            "section": "Docs",
+            "release": "minor"
+          },
+          {
+            "type": "feat",
+            "section": "Features",
+            "release": "major"
+          },
+          {
+            "type": "fix",
+            "section": "Bug Fixes",
+            "release": "patch"
+          },
+          {
+            "type": "chore",
+            "section": "Chores",
+            "release": "patch"
+          },
+          {
+            "type": "perf",
+            "section": "Performance Improvements",
+            "release": "patch"
+          },
+          {
+            "type": "refactor",
+            "section": "Refactor",
+            "release": "minor"
+          },
+          {
+            "type": "style",
+            "section": "Styles",
+            "release": "patch"
+          },
+          {
+            "type": "test",
+            "section": "Test",
+            "release": "minor"
+          },
+          {
+            "type": "security",
+            "section": "Security",
+            "release": "patch"
+          },
+          {
+            "type": "deprecated",
+            "section": "Deprecations",
+            "release": "minor"
+          }
+        ]
+      }
     }
   }
 }
