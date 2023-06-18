@@ -1,5 +1,9 @@
 # Changelog
 
+* feat: альфа (8007cb4)
+* ЧТо-то когда-то (#12) (416df7d)
+* Что-то (dcc3e23)
+
 # [1.5.0](https://github.com/AvocadoWeb/Todo-release/compare/1.4.1...1.5.0) (2023-06-18)
 
 
