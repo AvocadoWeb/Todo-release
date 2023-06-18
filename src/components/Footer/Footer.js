@@ -10,7 +10,7 @@ export default function Footer({ todoCount, onClear, filter, selectionFilter }) 
       <span className="todo-count"> {todoCount} items left</span>
       <TasksFilter filter={filter} selectionFilter={selectionFilter} />
       <button type="button" onClick={onClear} className="clear-completed">
-        Clear completed1234567
+        Clear completed12345678
       </button>
     </footer>
   )
